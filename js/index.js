@@ -12,7 +12,7 @@ const message = document.querySelector(".message");
 const mobileHeader = document.querySelector(".logo-mobile");
 const mobileMenu = document.querySelector(".mobile-menu");
 const mobileLinks = document.querySelectorAll(".mobile-bar");
-
+const header = document.querySelector("header");
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
   return (
@@ -70,4 +70,21 @@ mobileLinks.forEach((li) => {
 
     // console.log("clicked,ddsk");
   });
+});
+
+var prevScrollPos = document.documentElement.scrollTop;
+
+window.addEventListener("scroll", function () {
+  var currentScrollPos = document.documentElement.scrollTop;
+
+  if (prevScrollPos > currentScrollPos) {
+    // when scrolling up
+    header.classList.add("toggle");
+  } else {
+    // when scrolling down
+    console.log("---");
+    header.classList.remove("toggle");
+  }
+
+  prevScrollPos = currentScrollPos;
 });
