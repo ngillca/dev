@@ -125,10 +125,11 @@ a:hover {
 .about-cards {
   display: flex;
   align-items: center;
+  padding-top: 70px;
 }
 
 .about-card-left {
-  background-color: red;
+  background-color: blue;
 
   display: flex;
   flex-direction: column;
@@ -144,9 +145,10 @@ a:hover {
 
 .exp-container {
   /* border: 1px solid rgb(139, 5, 5); */
+  border-left: 1px solid white;
   color: rgb(27, 26, 25);
   margin: 15px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 3px;
   font-weight: 500;
 }
@@ -292,7 +294,7 @@ a:hover {
   }
 } */
 /* Media Queries mobile */
-@media (max-width: 790px) {
+@media (max-width: 970px) {
   body {
     /* background-color: red; */
   }
@@ -305,6 +307,7 @@ a:hover {
   }
   .navbar-mobile {
     display: flex;
+    overflow-x: hidden;
   }
   .landing-mobile {
     display: flex;
@@ -342,6 +345,43 @@ a:hover {
     padding: 40px;
 
     background-color: rgb(180, 245, 186);
+  } /* end */
+
+  /* Start mobile landing container */
+  .landing-mobile-container {
+    background-color: rgb(199, 211, 200);
+    margin: 30px;
+    height: 47vh;
+  } /* end */
+  .landing-mobile-grid {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+    overflow-x: hidden;
+    padding: 30px;
+  } /* end */
+  .landing-mobile-grid p {
+    color: black;
+    /* font-size: 2rem; */
+  }
+  .landing-mobile-bar-1 {
+    background-color: rgb(55, 82, 67);
+    height: 5vh;
+  }
+  .landing-mobile-bar-2 {
+    background-color: rgb(55, 82, 67);
+    height: 30vh;
+    width: 10vw;
+  }
+  .landing-mobile-content {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* margin: 10px; */
+  }
+  #landing-mobile-info {
+    font-size: 2rem;
   }
 }
 
