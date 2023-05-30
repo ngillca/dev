@@ -69,7 +69,7 @@ body {
   text-align: end;
   justify-content: flex-end;
 
-  font-size: 2.8rem;
+  font-size: 2.6rem;
 }
 a {
   text-decoration: none;
@@ -79,7 +79,7 @@ a {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 90px;
   position: fixed;
 }
 .mobile {
@@ -350,7 +350,7 @@ a:hover {
   /* Start mobile landing container */
   .landing-mobile-container {
     background-color: rgb(199, 211, 200);
-    margin: 30px;
+    margin: 70px 30px 30px 30px;
     height: 47vh;
   } /* end */
   .landing-mobile-grid {
@@ -382,7 +382,40 @@ a:hover {
   }
   #landing-mobile-info {
     font-size: 2rem;
+  } /* end */
+
+  /* Start About Mobile Grid */
+  .about-mobile-container {
+    margin: 300px 35px 35px 35px;
   }
+  .about-mobile-grid {
+    display: flex;
+    overflow-x: hidden;
+    gap: 10px;
+  } /* end */
+
+  .about-mobile-grid-left {
+    background-color: red;
+    height: 40vh;
+    width: 50vw;
+  } /* end */
+  .about-mobile-grid-right {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    gap: 10px;
+    width: 40vw;
+  } /* end */
+  .about-mobile-grid-right-top {
+    background-color: yellow;
+    overflow-x: hidden;
+    height: 50%;
+  } /* end */
+  .about-mobile-grid-right-bottom {
+    overflow-x: hidden;
+    background-color: green;
+    height: 50%;
+  } /* end */
 }
 
 .yuup {
